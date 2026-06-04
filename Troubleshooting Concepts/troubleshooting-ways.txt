@@ -1,0 +1,5 @@
+commands:
+
+1. strace:- trace system calls and signals made by a program
+
+#reproduce the error by ourselves similar to errors, helps to find the root cause.

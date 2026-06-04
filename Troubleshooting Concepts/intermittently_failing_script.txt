@@ -1,0 +1,45 @@
+/meeting_reminder$ ./meeting_reminder.sh 
+
+#!/bin/bash
+
+meeting_info=$(zenity --forms \
+    --title 'Meeting' --text 'Reminder information' \
+    --add-calendar 'Date' --add-entry 'Title' \
+    --add-entry 'Emails' \
+    2>/dev/null)
+if [[ -n "$meeting_info" ]]; then
+    python3 send_reminders.py "$meeting_info"
+fi
+
+def main():
+    if len(sys.argv) < 2:
+        return usage()
+
+    try:
+        date, title, emails = sys.argv[1].split('|')
+        message = message_template(date, title)
+        send_message(message, emails)
+        print("Successfully sent reminders to:", emails)
+    except Exception as e:
+        print("Failure to send email", file=sys.stderr)
+    except Exception as e:
+       print("Failure to send email: {}".format(e), file=sys.stderr)
+       
+
+#!/bin/bash
+
+meeting_info=$(zenity --forms \
+    --title 'Meeting' --text 'Reminder information' \
+    --add-calendar 'Date' --add-entry 'Title' \
+    --add-entry 'Emails' \
+    --forms-date-format='%Y-%m-%d' \
+    2>/dev/null)
+echo $meeting_info
+if [[ -n "$meeting_info" ]]; then
+    python3 send_reminders.py "$meeting_info"
+fi
+
+def dow(date):
+    dateobj = datetime.datetime.strptime(date, r"%Y-%m-%d")
+    return dateobj.strftime("%A")
+

@@ -1,0 +1,21 @@
+1 # Ticketing Number
+
+2 # Isolate the problem
+
+3 # Detect the root cause
+
+
+# Creating a reproduction case
+windows :- event triggers.
+
+# Finding the root cause
+Understanding the root cause is essential for long-term remidition.
+
+Tools : IOtop, Iostap, VM Stamp, Ionice, IFTop, rsync command, trickle program
+nice command, 
+
+# Dealing with Intermittent issues (Heisenbug):
+Ensure that:
+@ The load on the computer
+@ The processes running at the same time
+@ The usage of the network
