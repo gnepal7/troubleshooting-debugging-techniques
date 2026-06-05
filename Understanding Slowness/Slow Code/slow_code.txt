@@ -1,0 +1,32 @@
+Consider before strat coding:
+1, Code will effects the computer's efficiency.
+2, CProfile program to analyze python code, to count functions call.
+
+# break in Loops in Python.
+
+Creating caches
+
+# More about improving our code
+1. Profiling 
+Software profiling is a diagnostic technique used to analyze real-time resource utilization of 
+applications and monitor applications.
+
+
+# Parallelizing Operations
+Threads
+Asyncio
+I/O bound
+
+
+# Slowly growing in complexity
+SQLite : lightweight database system
+
+
+# Dealing with complex slow system
+1, Find the bottlenecks
+2, Should be good monitoring infrastructure
+3, Field shoule be indexed and properly used.
+
+
+# Using threade to make things go faster
+

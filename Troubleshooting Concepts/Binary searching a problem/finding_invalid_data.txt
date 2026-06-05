@@ -22,3 +22,8 @@ tail command for pring lines in the last.
 /import_data$ head -50 contacts.csv | tail -25 | tail -12 | head -6 | head -3 
 
 /import_data$ cat contacts.csv | ./import.py --server test
+
+
+1,
+Run the script with the first half of the computers.
+4, head

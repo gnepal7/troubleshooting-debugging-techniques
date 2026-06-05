@@ -1,0 +1,36 @@
+Solving the issue when computer is slow:
+
+# Identify the bottleneck
+
+Resource Monitor, Performance Monitor
+
+# Computer Resources:
+Operating systems also use cache for running system.
+Memory leak
+
+# Possible Causes of Slowness
+1, Find out when is the computer slow.
+2, Due to not deleting the temp file for long time.
+3, Logrotate to solve issues.
+4, Hardware barrier also cause the slowness.
+5. Milessious software, may be caused through the websites too.
+
+# Slow Web Server
+1, pidof command in linux
+
+ps ax
+
+
+List all processestasklist
+List all processes (verbose)tasklist /v
+List processes with PIDtasklist /fo csv
+Kill a process (like kill)
+
+Do it with powershell:
+Get-Process
+Get-Process | Sort-Object CPU -Descending
+
+Sysinternals
+
+Windows Process Monitor:
+https://learn.microsoft.com/en-us/sysinternals/downloads/procmon
