@@ -1,1 +1,26 @@
+System might be crashed, due to:
+1, unproper assembling of haradares
+2, properly not installed drivers
+
+use SMART methods to solve 
+
+# understanding crashing applications:
+ways of detecting the problems:-
+1. check log file
+2. Debugging login
+3. windows: Process monitor, linux : strace, MACos...
+
+# What to do when you can't fis the program?
+1, work around the possible crash
+2, Using Wrapper, is between program facilitates application and hardware.
+3, Virtual Machine, Container
+4, Deploy Watchdog
+
+# Internal Server Error
+netstat - windows
+sudo - linux
+
+What is an internal server error?
+An internal server error is a Hypertext Transfer Protocol (HTTP) response, communicating to the user that an error occurred before completing a specific request. In short, the server tried to do something, but it failed. The most common internal server error is an HTTP 500 error, but other common error codes include 200, 301, 302, 304, 403, 404, and 503. Here is an example of what an internal server error might look like in a browser
+
 
