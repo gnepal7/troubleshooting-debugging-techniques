@@ -29,4 +29,5 @@ SQLite : lightweight database system
 
 
 # Using threade to make things go faster
+1, It reduces the performing time.
 
