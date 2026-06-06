@@ -1,1 +1,26 @@
+# Getting to the important tasks
+1. Eisenhower Decision Matrix :- Urgent and Important
+2. Technical debt
 
+# Prioritizing Tasks
+1. Make a list of all the tasks that need to get done
+2. Check tha real urgency of tasks
+3. Asses the importance of issues
+4. Most Important, Important, and Not Important
+5. How much effort does the urgent task takes
+6. Always work on important task(s)
+7. Taking breaks.
+
+# Estimating the Time Tasks Will Take
+1.  
+
+# Communicating Expectations
+- Try to be clear and up front about when you expect the issue will be resolved.
+- Ticket tracking system
+- organize your tasks by priority
+
+# More about making the best use of your time
+1. Make a list
+2. Organize
+3. Prioritize
+4. Schedule
