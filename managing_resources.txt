@@ -1,0 +1,16 @@
+# Memory leaks and how to prevent them
+chunk of Memory that is no longr needed of realesed.
+Garbage collector:-
+in charge of freeing the memory that's no longer in use.
+
+Memory Profiler, Valgrind
+
+# Managing Disk Space
+1. installed binaries and libraries
+2. data stored by the applications
+3. cached information
+4. logs
+5. temporary files
+6. backups
+
+-no space on the disk for installing more apps. 

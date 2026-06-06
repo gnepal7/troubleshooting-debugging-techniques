@@ -1,0 +1,18 @@
+# Crashes in complex systems
+
+# Communication and Documentation During Incidents
+
+# Writing Effective Portmortems
+Document detail and problem solving and instructions about to diagnose the issues.
+Details of 
+cause issues
+impact of cause
+short-term solution
+remidition
+
+The main sections of the document should follow a pattern similar to the following:
+1. What happened and when
+2. Who was affected
+3. What the root cause was
+4. How the issue was resolved and when
+5. Why it happened, including improvement plans or other remediation actions

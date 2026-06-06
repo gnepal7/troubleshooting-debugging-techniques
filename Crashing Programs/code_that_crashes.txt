@@ -1,0 +1,146 @@
+# Accessing invalid memory:-
+1. sef=gfaults
+2. debugger
+3. debugging symbols
+4. PDB files
+5. Valgrind
+6. Dr. memory
+
+# Unhandled errors and exceptions
+IndexError, TypeError, DivisionByZeroError in Python
+pringf debugging, logging in Python
+
+# Fixing someone else's code
+write comment for all functions even if possible for line by line
+
+# Debugging a segmentation fault
+gdb -c core :- linux
+backtrace, up, list, 
+null pointer, off-by-one-error
+
+# Debugging a Python crash
+pdb3
+next
+continue
+By Order Mark :- BOM
+cat new_products.csv 
+
+./update_products.py new_products.csv
+#This throws an error
+
+pdb3 update_products.py new_products.csv
+
+./update_products.py new_products.csv
+
+# Debugging with Print
+import urllib3
+
+def get_web_page(url):
+	http = urllib3.PoolManager()
+	response = http.request("GET", url)
+	print(response.data.decode("utf-8"))
+
+import urllib3
+
+def get_web_page(url):
+	http = urllib3.PoolManager()
+	print("Retrieving URL:", url)
+	response = http.request("GET", url)
+	print("HTTP response code:", response.status, response.reason)
+	print(response.data.decode("utf-8"))
+
+get_web_page("http://google.com")Retrieving URL: http://google.com
+HTTP response code: 200 OK
+
+# Debugging with assert
+Assertions are not only beneficial to programmers to help 
+catch bugs in their code, but they also prevent code from 
+continuing to execute when additional input would cause 
+further errors.
+
+# Try and catch debugging
+try:
+    # Code that might raise an exception
+    result = 10 / 0
+except ZeroDivisionError:
+    print("Oops! You tried to divide by zero.")
+
+Why use try and catch debugging?
+1. Identify problems
+2. Gain insight
+3. Fail gracefully
+4. Log errors
+
+def calculate_average(numbers):
+    try:
+        return sum(numbers) / len(numbers)
+    except ZeroDivisionError:
+        print("The list is empty. Cannot calculate the average.")
+        return None
+
+class InvalidInputError(Exception):
+    pass
+
+
+class EmptyInputError(Exception):
+    pass
+
+
+def calculate_average(numbers):
+    try:
+        return sum(numbers) / len(numbers)
+    except TypeError:
+        raise InvalidInputError(f"Expected a list or tuple, but got {type(numbers)}")
+    except ZeroDivisionError:
+        raise EmptyInputError("The list is empty. Cannot calculate the average.")
+    finally:
+        print("Execution of calculate_average function completed.")
+
+# Python logging module
+import logging
+def user_login(username, password):
+    logging.info(f"Attempting to log in user: {username}")
+    # ... (some code for authentication)
+    if authentication_failed:
+        logging.error(f"Login failed for user: {username}")
+    else:
+        logging.info(f"Successfully logged in user: {username}")
+    
+# Python debugging with pdb(Python debugger)
+PDB allows:
+1. Set breakpoints
+2. Step through code
+3. Inspect variables
+4. Evaluate arbitrary Python expressions interactively
+import pdb
+
+def add_numbers(a, b):
+    pdb.set_trace()  # This will set a breakpoint in the code
+    result = a + b
+    return result
+
+print(add_numbers(3, 4))
+
+Command included in PDB:
+a (args): Show the arguments of the current function.
+b: Manually set a persistent breakpoint while in debugger.
+n (next): Execute the next line within the current function.
+s (step): Execute the current line and stop at the first possible occasion (e.g., in a function that is called).
+c (continue): Resume normal execution until the next breakpoint.
+p (print): Evaluate and print the expression, e.g., p variable_name will print the value of variable_name.
+Pp (pretty-print): Pretty-print the value of the expression.
+q (quit): Exit the debugger and terminate the program.
+r (return): Continue execution until the current function returns.
+tbreak: Manually set a temporary breakpoint that goes away once hit the first time.
+!: Prefix to execute an arbitrary Python command in the current environment, 
+e.g., !variable_name = "new_value" will set variable_name to "new_value".
+
+# Debugging/ breakpoints in VS Code
+
+# AI infused debugging and paired programming
+1. AI paired programming and infused debugging
+2. Paired programming
+3. Paired debugging
+
+# Resources for debugging crashes
+
