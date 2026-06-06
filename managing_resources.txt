@@ -14,3 +14,22 @@ Memory Profiler, Valgrind
 6. backups
 
 -no space on the disk for installing more apps. 
+
+# Network Saturation
+1. latency
+2. bandwidth
+3. traffic shaping
+
+# Dealing with memory leaks
+A memory leak is when a program doesn’t free unused memory, 
+causing memory usage to grow over time
+1. scroll buffer
+2. memory_profiler for Python.
+3. decorator
+
+-Concurrency
+-ipconfig /all for windows
+
+
+
+
